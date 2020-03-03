@@ -2,6 +2,7 @@
 <html>
 <head>
 	<title>Assg-3</title>
+	<link rel="stylesheet" type="text/css" href="assg3.css">
 </head>
 <body>
 	<header>
@@ -10,22 +11,22 @@
 	<section id="html-forms" class="main-section">
 		<h3>Just the basics</h3>
 		<form action="somewhere.php" method="post">
-			<div>
+			<div id="Basic" class="mame">
 				<label for="FirstName">First name</label>
 				<input type="text" name="FirstName" id="FirstName" placeholder="First name goes here" required>
 			</div>
 			<br>
-			<div>
+			<div id="last" class="name">
 				<label for="LastName">Last Name</label>
 				<input type="text" name="LastName" id="LastName" placeholder="Enter your Last Name here" required>
 			</div>
 			<br>
-			<div>
+			<div id="gmail" class="email">
 				<label for="email">Email</label>
 				<input type="email" name="email" id="email" value="example@gmail.com" required>
 			</div>
 			<br>
-			<div>
+			<div id="lock" class="password">
 				<label for="pass">Password</label>
 				<input type="password" name="pass" id="pass" required>
 			</div>
@@ -36,10 +37,14 @@
 						Spill the tea!
 				</textarea>
 			</div>
+		<!-- for some reason the validator said that I had to close the form even though the intire site is a form-->
+		</form>
+	</section>
 	<section>
+		<br>
 		<h3>Getting more personal</h3>
-			<br>
 			<div>
+				<!-- I had this as a drop down accidentaill insead of "radio" -->
 				<label for="Female">
 					<input type="radio" id="Female" name="Gender" value="Female" checked>
 					Female
@@ -56,7 +61,7 @@
 			<br>
 	</section>
 	<section>
-		<h3>Ok now give all the tea</h3>
+		<h3>Ok now spill all the tea</h3>
 			<div>
 				<label for="dte">Date of Birth</label>
 				<input type="date" name="dte" id="dte"><br>
@@ -72,22 +77,16 @@
 				<input type="text" name="City" id="City" placeholder="City name goes here" required>
 			</div>
 	</section>
-	<section>
+	<article>
+		<br>
 		<h3>Seconds please</h3>
-			<br>
-				<label for="Country">Country:</label>
-				<select name="Country" id="Country">
-					<option value="Canada" selected>Canada</option>
-					<option value="USA">USA</option>
-					<option value="Other">Other</option>
-			<!--This dropdown will be the death of me!!-->
-			<!-- Nothing I do workes!! First the valdator told me it cant be in sections, than forms, and now the BODY!-->
-				<label for="Province">
+
+		<label for="Province">Province</label>
 				<select id="Province" name="Province">
 					<optgroup label="Canada">
 						<option value="Alberta">Alberta</option>
 						<option value="British Columbia">British Columbia</option>
-						<option value="Ontario">Ontario</option>
+						<option value="Ontario" selected>Ontario</option>
 						<option value="Quebec">Quebec</option>
 					</optgroup>
 					<optgroup label="USA">
@@ -95,46 +94,55 @@
 						<option value="Miami">Miami</option>
 						<option value="Kentucky">Kentucky</option>
 					</optgroup>
+				</select>
 			<br>
-	<section>
+				<label for="Country">Country:</label>
+				<select name="Country" id="Country">
+					<option value="Canada" selected>Canada</option>
+					<option value="USA">USA</option>
+					<option value="Other">Other</option>
+				</select>
+			<!--This dropdown will be the death of me!!-->
+			<!-- Nothing I do workes!! First the valdator told me it cant be in sections, than forms, and now the BODY!-->
+			<br>
 			<div>
 				<label for="Postalcode">Postal Code</label>
 				<input type="text" name="Postalcode" id="Postalcode" placeholder="Postal Code goes here" required>
 			</div>
 			<br>
 			<div>
+				<!-- I was gonna try the input type=tel but in the assignement it says to use a text type-->
 			<label for="phone">Mobile Number</label>
 				<input type="text" name="phone" id="phone" placeholder="Mobile Phone">
 			</div>
 			<br>
+			<!-- Almost for got this part because I add a link in the footer-->
 				<label for="Website">Enter a URL:</label>
 				<input type="url" name="Website" id="Website">
 			<br>
 			<div>
+				<!--The most basic hobbies I thought of-->
 				<h3>What are you into?</h3>
-				<label for="Hobbies">Baking</label>
+				<label for="Baking">Baking</label>
 					<input type="checkbox" name="Hobbies" id="Baking" value="Baking"> <br>
-				<label for="Hobbies">Reading</label>
+				<label for="Reading">Reading</label>
 					<input type="checkbox" name="Hobbies" id="Reading" value="Reading"> <br>
-				<label for="Hobbies">Painting</label>
+				<label for="Painting">Painting</label>
 					<input type="checkbox" name="Hobbies" id="Painting" value="Painting"> <br>
-				<label for="Hobbies">Kniting</label>
+				<label for="Kniting">Kniting</label>
 					<input type="checkbox" name="Hobbies" id="Kniting" value="Kniting"> <br>
 			</div>
 			<br>
 			<h3>Finish it!!</h3>
 			<button type="submit">Submit</button>
-			<br>
 			<button type="reset">Reset</button>
-			<br>
 			<!-- I saw this on w3school and I thought I would try it out-->
 			<button type="button" onclick="alert('I hope this works. Trying something new!')">Click Me!</button>
-		</form>
-	</section>
+	</article>
 	<footer id="footer">
 		<h3>Thank you!</h3>
-		<!-- This is a video we did last semester and was a class favourite-->
 		<p>Thank you for filling out this form! Because of all your hard work here is a link to our favorite video.</p>
+		<!-- This is a video we did last semester and was a class favourite-->
 		<a href="https://youtu.be/-JpsLx-xqrw" title="JAK NEWS YOUTUBE" target="_blank">JAK NEWS YOUTUBE</a>
 	</footer>
 </body>

@@ -1,0 +1,16 @@
+
+/* This is for the whole background*/
+body{
+	background-color: lightblue;
+}
+h1{
+	color: lightgray;
+	margin-left: 50px;
+	background-color: slateblue;
+}
+h3{
+	border: 2px solid mediumseagreen;
+}
+*{
+	color: gray;
+}
