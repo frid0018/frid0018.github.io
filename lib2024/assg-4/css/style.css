@@ -1,0 +1,29 @@
+/*for some reason it will not work!!*/ 
+ header {
+ 	background-color: rgb(124,197,118);
+ }
+
+  footer {
+ 	background-color: rgb(124,197,118);
+ }
+  h3 {
+ 	background-color: rgb(109,209,246);
+ }
+ h3 {
+
+ 	background-color: blue;
+ 	text-align: center;
+ }
+a[href*="facebook"] {
+
+	background-image: url("../img/facebook.png");
+}
+a[href*="youtube"] {
+
+	background-image: url("../img/youtube.png");
+}
+
+a[href*="twitter"] {
+
+	background-image: url("../img/twitter.png");
+}
