@@ -74,6 +74,7 @@ a[href="https://twitter.com/"]:before {
 }
 .end {
 	background-color: rgb(124,197,118);
+	clear: left;
 }
 h1 {
 	text-align: center;
@@ -91,14 +92,29 @@ a:link, a:visited {
 }
 .img1, .img2, .img3 {
 	float: left;
-	width: 200px;
+	width: 250px;
 }
 .logosibeb {
 	float: left;
+	clear: left;
 	width: 50px;
 }
 
-.main .p1 {
+.main, .p1, .p2 {
+	float: left;
+	clear: left;
+}
+.p1, .p2 {
+	width: 70%
+}
+.p3 {
+	width: 30%;
+}
+.sidebart, .p3, .logoside {
 	float: right;
 	clear: right;
+}
+.content2 {
+	float: left;
+	clear: left;
 }
