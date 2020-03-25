@@ -50,71 +50,55 @@ table {
 	display: table;
 	clear: both;
 }
-
-header {
+/* Mobile thing 
+.col-main, .col-footer, img {
+	width:100%;
+}
+*/
+body {
+	background-image: url(../img/white-waves.png);
+}
+/*social media links*/
+a[href="https://www.facebook.com/"]:before {
+	background-image: url(../img/facebook.png);
+}
+a[href="https://www.youtube.com/"]:before {
+	background-image: url(../img/youtube.png);
+}
+a[href="https://twitter.com/"]:before {
+	background-image: url(../img/twitter.png);
+}
+/*background colours*/
+.topnav {
 	background-color: rgb(124,197,118);
 }
-footer {
+.end {
 	background-color: rgb(124,197,118);
 }
-.logo1 {
-	float: left;
+h1 {
+	text-align: center;
 }
 
-.p1, .p2 {
+a:link, a:visited {
+  background-color: rgb(109,207,246);
+  color: black;
+  padding: 24px 35px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  float: left;
+  margin: 25px;
+}
+.img1, .img2, .img3 {
 	float: left;
-	width: 70%;
-	clear: left;
+	width: 200px;
 }
-.logoside {
+.logosibeb {
 	float: left;
-	width: 20%;
+	width: 50px;
 }
-.sidebart {
+
+.main .p1 {
 	float: right;
-	width: 20%;
-}
-.p3 {
-	float: right;
-	width: 20%;
 	clear: right;
-}
-.main {
-	float: left;
-	clear: left;
-}
-.content2{
-	clear: left;
-}
-
-.home, .about, .contact, .work{
-	background-color: rgb(109,207,246);
-	padding: 16px 32px;
-	margin: 4px 2px
-	border: none;
-}
-.home {
-	float: left;
-	margin: 15px;
-	c
-}
-.about {
-	float: left;
-	margin: 15px;
-}
-.contact {
-	float: right;
-	margin: 15px;
-}
-.work {
-	float: right;
-	margin: 15px;
-}
-.img3, .img1, .img2 {
-	float: left;
-	margin: 100px;
-}
-.pf {
-	float: left;
-	clear: left;
 }
