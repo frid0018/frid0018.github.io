@@ -1,29 +1,31 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 	<title>Final LIB2024</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="style1.css">
+	<script src="js/script.js"></script>
 </head>
 <body>
-	<h1 class="title">My Logo</h1>
-		<section>
-			<p>Home</p>
-			<p>About</p>
-			<p>Schedule</p>
-			<p>Portfolio</p>
-			<p>Contact</p>
-		</section>
+	<h1>My Logo</h1>
+		<div>
+			<ul class="navlist">
+				<li class="nl">Home</li>
+				<li class="nl">About</li>
+				<li class="nl">Schedule</li>
+				<li class="nl">Portfolio</li>
+				<li class="nl">Contact</li>
+			</ul>
+		</div>
 		<article>
+			<figure class="book"><img src="img/book-chapter-six-5834.jpg" alt="Book" width="326" height="234"></figure>
 			<h2>About</h2>
 			<p>Cupcake ipsum dolor sit amet topping jelly. Macaroon lemon drops jelly beans cake I love. I love croissant tiramisu. I love muffin sweet roll cheesecake carrot cake muffin cake pie lemon drops. I love icing biscuit pastry pastry lollipop chocolate I love. Sugar plum dragée chupa chups topping cake jelly-o. Pudding caramels biscuit sesame snaps jelly. Wafer danish I love brownie jelly lemon drops jelly macaroon. I love carrot cake chocolate cake caramels marzipan caramels ice cream cotton candy macaroon.</p>
-			<br>
 			<p>Liquorice I love marzipan brownie icing sesame snaps sweet roll wafer ice cream. Halvah cheesecake pudding. Sesame snaps sweet lemon drops chupa chups tart. Soufflé tootsie roll tootsie roll I love brownie tootsie roll. Pie donut cake muffin. Jelly beans chocolate jelly cake I love cupcake tiramisu ice cream. Tart bonbon gummi bears gingerbread jujubes carrot cake. Sweet powder pastry ice cream jelly bonbon.</p>
-			<img src="img/pencilpic.img" alt="Pencils">
 		</article>
 		<section>
-			<h2>Schedule</h2>
-				<table class="sche">
-					<tr>
+			<h2 class="sche">Schedule</h2>
+				<table>
+					<tr class="top">
 						<th>Time</th>
 						<th>Monday</th>
 						<th>Tuesday</th>
@@ -65,9 +67,15 @@
 					</tr>
 				</table>
 		</section>
+		<aside>
+			<h2>Profile Info</h2>
+			<div class="profilebox">
+				
+			</div>
+		</aside>
 		<section>
 			<h2>Edit Profile</h2>
-				<form action="somewhere.php" method="post">
+				<form action="somewhere.php" method="post" id="form1">
 					<div id="name" class="name">
 						<label for="FullName">Name</label>
 						<input type="text" name="FullName" id="FullName" placeholder="John Snow" required>
@@ -78,12 +86,12 @@
 						<input type="email" name="email" id="email" value="example@gmail.com" required>
 					</div>
 					<br>
-					<div id="address" class="address">
+					<div class="address">
 						<label for="address">Address</label>
 						<input type="text" name="address" id="address" placeholder="123 Mystreet Road" required>
 					</div>
 					<br>
-					<div id="City" class="City">
+					<div class="City">
 						<label for="City">City</label>
 						<input type="text" name="City" id="City" placeholder="City name goes here" required>
 					</div>
@@ -104,32 +112,34 @@
 						<input type="text" id="postal" class="postal" pattern="[A-Za-z][0-9][A-Za-z] [0-9][A-Za-z][0-9]" placeholder="A0A 0A0" required>
 					<br>
 					<br>
-						<button type="submit">Submit</button>
+						<button type="submit" class="submit">Submit</button>
 				</form>
 		</section>
-		<aside>
-			<h2>Profile Info</h2>
-		</aside>
+		
 		<footer>
+			<div class="footer">
 			<h5>Quick Links</h5>
-			<ul>
-				<li>Schedule</li>
-				<li>About</li>
-				<li>Portfolio</li>
-				<li>Contact</li>
-			</ul>
+				<p>
+					Schedule <br>
+					About <br>
+					Portfolio <br>
+					Contact <br>
+				</p>
+			</div>
+			<div class="footer">
 			<h5>Follow Us</h5>
-			<img src="img/facebook.img" alt="Facebook">
-			<img src="img/youtube.img" alt="Youtube">
-			<img src="img/twitter.img" alt="Twitter">
+				<img src="img/facebook.png" alt="Facebook">
+				<img src="img/youtube.png" alt="Youtube">
+				<img src="img/twitter.png" alt="Twitter">
+			</div>
+			<div class="footer">
 			<h5>Address</h5>
-			<address>
-				1385 Woodroffe Ave,<br>
-				Nepean, ON K2G 1V8<br>
-				Canada
-			</address>
+				<address>
+					1385 Woodroffe Ave,<br>
+					Nepean, ON K2G 1V8<br>
+					Canada
+				</address>
+			</div>
 		</footer>
-
-
 </body>
 </html>

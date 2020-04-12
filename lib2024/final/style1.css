@@ -1,0 +1,139 @@
+
+body{
+	background-image: url(img/background1.png);
+}
+h1{
+	color: rgb(112,167,170);
+	text-transform: uppercase;
+}
+.book{
+	float: right;
+}
+
+body{
+	font-family: 'Kanit', sans-serif;
+}
+/*The top navlist */
+.navlist {
+  	list-style-type: none;
+  	margin: 0;
+  	padding: 0;
+  	overflow: hidden;
+  	background-color: rgb(114,169,174);
+}
+
+.nl {
+  	float: left;
+}
+
+.nl {
+  	display: inline-block;
+  	color: black;
+  	text-align: center;
+  	padding: 14px 16px;
+  	text-decoration: none;
+}
+
+h2{
+	color: rgb(11,168,177);
+	text-transform: uppercase;
+}
+/*For the table */
+table, td, th {  
+  	border: 1px solid #ddd;
+  	text-align: center;
+}
+
+table {
+  	border-collapse: collapse;
+  	width: 100%;
+}
+
+th, td {
+  	padding: 15px;
+}
+/*The different colour lines */
+tr:nth-child(even) {background-color: #f2f2f2;}
+/*for the animantion */
+.sche {
+  height: 25px;
+  width: 25px;
+  margin: 0 auto;
+  animation-name: stretch;
+  animation-duration: 1.5s; 
+  animation-timing-function: ease-out; 
+  animation-delay: 0;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  animation-fill-mode: none;
+  animation-play-state: running;
+  clear: left;
+}
+
+@keyframes stretch {
+  0% {
+    transform: scale(.3);
+    border-radius: 100%;
+    float: left;
+  }
+  50% {
+  }
+  100% {
+    transform: scale(1.5);
+    float: left;
+  }
+}
+.top{
+	color: rgb(11,168,177);
+}
+
+input, select {
+  	width: 15%;
+  	padding: 12px 20px;
+  	display: inline-block;
+  	border: 1px solid black;
+  	border-radius: 4px;
+  	box-sizing: border-box;
+}
+.submit {
+  	width: 10%;
+  	color: black;
+  	padding: 14px 20px;
+  	margin: 8px 0;
+  	cursor: pointer;
+}
+form{
+  	width: 100%;
+  	padding: 50px;
+  	margin: 20px;
+}
+aside{
+	float: right;
+}
+.profilebox{
+	background-color: white;
+  	width: 300px;
+  	height: 342px;
+  	padding: 50px;
+  	margin: 20px;
+  	box-shadow: 10px 10px 5px grey;
+}
+
+* {
+  	box-sizing: border-box;
+}
+
+.footer {
+ 	float: left;
+  	width: 33.33%;
+  	padding: 50px;
+ 	color: white;
+ 	background-color: rgb(69,69,69);
+}
+
+.clearfix::after {
+  	content: "";
+  	clear: both;
+  	display: table;
+}
+
